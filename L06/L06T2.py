@@ -4,10 +4,11 @@ def tiedostoLue(tiedoston_nimi):
             name_lines = tiedosto.readlines()
 
         count_names = len(name_lines)
-        count_letters = sum(len(name_line.strip()) for name_line in name_lines)
+        count_letters = sum(len(name_line) for name_line in name_lines)
 
         if count_names > 0:
-            average_letters = round(count_letters / count_names)
+            pure_letters = sum(len(name_line.strip) for name_line in name_lines)
+            average_letters = round(pure_letters / count_names)
         else:
             average_letters = 0
 
