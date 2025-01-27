@@ -1,0 +1,3 @@
+Pienin askelmäärä oli 10965 askelta.
+Suurin askelmäärä oli 25012 askelta.
+Yhteensä askelia oli 35977 askelta.
