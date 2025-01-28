@@ -10,14 +10,12 @@ def readTextFile(file_name):
         return None
     
 def getSmallestAndLargest(steps):
-    smallest = min(steps)
-    largest = max(steps)
+    smallest = min(steps, key=int) #key=intにすることで整数としてあつかう
+    largest = max(steps, key=int)  #key=intがないと文字列になってしまう
     return smallest, largest
 
 def calculateTotal(steps):
-    total = 0
-    for step in steps:
-        total += int(step.strip())
+    total = sum(int(step) for step in steps)
     return total
 
 # save = write
